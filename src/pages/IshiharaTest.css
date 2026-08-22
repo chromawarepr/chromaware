@@ -1,0 +1,903 @@
+/* =========================================================
+   CHROMAWARE — ISHIHARA SCREENING
+========================================================= */
+
+.ishihara-container {
+  min-height: 100vh;
+  padding: 130px 7% 80px;
+  background: #f8faf9;
+  color: #173f35;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   START CARD
+========================================================= */
+
+.ishihara-container .test-start-card {
+  width: 100%;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 55px 60px;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(23, 63, 53, 0.08);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.ishihara-container .brand-title {
+  margin-bottom: 18px;
+  color: #28594d;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+
+.ishihara-container .test-type-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  margin-bottom: 22px;
+  background: #e4f0eb;
+  color: #28594d;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* =========================================================
+   START TITLE
+========================================================= */
+
+.ishihara-container .test-start-card h1 {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  color: #173f35;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.ishihara-container .test-start-card > p {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  color: #60716b;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   TEST INFORMATION
+========================================================= */
+
+.ishihara-container .test-information {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.ishihara-container .test-information div {
+  padding: 20px 15px;
+  background: #f4f7f5;
+  border-radius: 18px;
+}
+
+.ishihara-container .test-information strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #173f35;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.ishihara-container .test-information span {
+  color: #60716b;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* =========================================================
+   TEST NOTE
+========================================================= */
+
+.ishihara-container .test-note {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 18px 20px;
+  background: #f4f7f5;
+  border-left: 4px solid #c9a227;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.ishihara-container .test-note strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #173f35;
+  font-size: 14px;
+}
+
+.ishihara-container .test-note p {
+  margin: 0;
+  color: #60716b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.ishihara-container .primary-btn {
+  border: none;
+  padding: 16px 35px;
+  background: #173f35;
+  color: #ffffff;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ishihara-container .primary-btn:hover {
+  background: #28594d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(23, 63, 53, 0.15);
+}
+
+/* =========================================================
+   QUESTION CARD
+========================================================= */
+
+.ishihara-container .question-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 45px 50px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(23, 63, 53, 0.08);
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   QUESTION HEADER
+========================================================= */
+
+.ishihara-container .question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #60716b;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.ishihara-container .quiz-progress {
+  width: 100%;
+  height: 8px;
+  margin-bottom: 35px;
+  background: #e8eeeb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ishihara-container .quiz-progress div {
+  height: 100%;
+  background: #28594d;
+  border-radius: 20px;
+  transition: width 0.35s ease;
+}
+
+/* =========================================================
+   PLATE NUMBER
+========================================================= */
+
+.ishihara-container .question-number {
+  margin-bottom: 20px;
+  color: #c9a227;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* =========================================================
+   ISHIHARA PLATE
+========================================================= */
+
+.plate-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px;
+}
+
+.plate-image {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 15px 40px rgba(23, 63, 53, 0.1);
+}
+
+/* =========================================================
+   QUESTION TITLE
+========================================================= */
+
+.ishihara-question-title {
+  margin: 0 0 25px;
+  text-align: center;
+  color: #173f35;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+}
+
+/* =========================================================
+   ANSWER INPUT
+========================================================= */
+
+.ishihara-answer-area {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ishihara-answer-area label {
+  display: block;
+  margin-bottom: 10px;
+  color: #60716b;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ishihara-answer-row {
+  display: flex;
+  gap: 12px;
+}
+
+.ishihara-answer-input {
+  flex: 1;
+  min-width: 0;
+  padding: 16px 20px;
+  border: 1px solid #dce5e1;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #173f35;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  box-sizing: border-box;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.ishihara-answer-input::placeholder {
+  color: #9aa8a3;
+  font-weight: 500;
+}
+
+.ishihara-answer-input:focus {
+  border-color: #28594d;
+  box-shadow: 0 0 0 4px rgba(40, 89, 77, 0.08);
+}
+
+.submit-answer-btn {
+  min-width: 120px;
+  border: none;
+  padding: 0 22px;
+  background: #173f35;
+  color: #ffffff;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.submit-answer-btn:hover {
+  background: #28594d;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   LOADING OVERLAY
+========================================================= */
+
+.result-loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: rgba(13, 40, 34, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  animation: overlayFadeIn 0.3s ease;
+  box-sizing: border-box;
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.result-loading-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 48px 42px;
+  background: #ffffff;
+  border: 1px solid rgba(40, 89, 77, 0.08);
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 35px 90px rgba(0, 0, 0, 0.28);
+  box-sizing: border-box;
+}
+
+.loading-spinner {
+  width: 38px;
+  height: 38px;
+  margin: 0 auto 25px;
+  border: 4px solid #cfe0d9;
+  border-top-color: #173f35;
+  border-right-color: #28594d;
+  border-radius: 50%;
+  animation: spin 0.85s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.result-loading-card h2 {
+  margin: 0 0 12px;
+  color: #173f35;
+  font-size: 1.65rem;
+  font-weight: 800;
+}
+
+.result-loading-card p {
+  max-width: 360px;
+  margin: 0 auto 28px;
+  color: #60716b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.loading-progress {
+  width: 100%;
+  height: 6px;
+  margin-bottom: 14px;
+  background: #e8eeeb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.loading-progress-bar {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #173f35,
+    #28594d,
+    #c9a227
+  );
+  border-radius: 20px;
+  transform: translateX(-100%);
+  animation: loadingProgress 1.8s ease forwards;
+}
+
+@keyframes loadingProgress {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.loading-small {
+  display: block;
+  color: #8a9993;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   RESULT CARD
+========================================================= */
+
+.assessment-result {
+  width: 100%;
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(23, 63, 53, 0.08);
+  box-sizing: border-box;
+}
+
+.report-brand {
+  margin: 0 0 12px;
+  color: #28594d;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.result-type {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 16px;
+  background: #e4f0eb;
+  color: #28594d;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.assessment-result > h1 {
+  margin: 0 0 15px;
+  color: #173f35;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.result-text {
+  margin: 0 auto 35px;
+  color: #60716b;
+  line-height: 1.7;
+}
+
+.participant-result {
+  padding: 25px;
+  margin-bottom: 20px;
+  background: #f4f7f5;
+  border-radius: 20px;
+}
+
+.participant-result span {
+  display: block;
+  margin-bottom: 7px;
+  color: #7a8883;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.participant-result h2 {
+  margin: 0;
+  color: #173f35;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* =========================================================
+   SCORE
+========================================================= */
+
+.result-score {
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 22px;
+  background: #173f35;
+  color: #ffffff;
+}
+
+.result-score h2 {
+  margin: 0;
+  font-size: 3.8rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.result-score p {
+  margin: 10px 0 8px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.result-score strong {
+  color: #c9a227;
+  font-size: 1.2rem;
+}
+
+/* =========================================================
+   SCREENING STATUS
+========================================================= */
+
+.screening-status {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.screening-success {
+  background: #e4f0eb;
+  color: #28594d;
+}
+
+.screening-warning {
+  background: #f8f0d7;
+  color: #8a6812;
+}
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.feedback {
+  padding: 25px;
+  margin-bottom: 20px;
+  background: #f8faf9;
+  border-radius: 20px;
+  border-left: 4px solid #c9a227;
+  text-align: left;
+}
+
+.feedback h3 {
+  margin: 0 0 10px;
+  color: #173f35;
+  font-size: 1.05rem;
+}
+
+.feedback p {
+  margin: 0;
+  color: #586963;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.educational-notice {
+  background: #f4f7f5;
+}
+
+/* =========================================================
+   RESULT ACTIONS
+========================================================= */
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.primary-result-btn,
+.secondary-result-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 25px;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.primary-result-btn {
+  border: none;
+  background: #173f35;
+  color: #ffffff;
+}
+
+.primary-result-btn:hover {
+  background: #28594d;
+  transform: translateY(-2px);
+}
+
+.secondary-result-btn {
+  border: 1px solid #d8e2de;
+  background: #ffffff;
+  color: #28594d;
+}
+
+.secondary-result-btn:hover {
+  background: #f4f7f5;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .ishihara-container {
+    padding: 120px 5% 60px;
+  }
+
+  .ishihara-container .test-start-card,
+  .ishihara-container .question-card,
+  .assessment-result {
+    padding: 40px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+  .ishihara-container {
+    padding: 105px 6% 50px;
+  }
+
+  .ishihara-container .test-start-card,
+  .ishihara-container .question-card,
+  .assessment-result {
+    padding: 30px 22px;
+    border-radius: 23px;
+  }
+
+  .ishihara-container .test-start-card,
+  .ishihara-container .question-card,
+  .assessment-result {
+    margin: 20px auto;
+  }
+
+  .ishihara-container .test-start-card h1 {
+    font-size: 2.2rem;
+    letter-spacing: -0.8px;
+  }
+
+  .ishihara-container .test-information {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .ishihara-container .test-information div {
+    padding: 15px;
+  }
+
+  .ishihara-answer-row {
+    flex-direction: column;
+  }
+
+  .ishihara-answer-input {
+    width: 100%;
+  }
+
+  .submit-answer-btn {
+    width: 100%;
+    min-height: 52px;
+  }
+
+  .plate-image {
+    max-width: 340px;
+  }
+
+  .result-actions {
+    flex-direction: column;
+  }
+
+  .primary-result-btn,
+  .secondary-result-btn {
+    width: 100%;
+  }
+
+  .result-loading-card {
+    padding: 40px 25px;
+  }
+}
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+  .ishihara-container {
+    padding: 95px 5% 40px;
+  }
+
+  .ishihara-container .test-start-card,
+  .ishihara-container .question-card,
+  .assessment-result {
+    padding: 25px 18px;
+  }
+
+  .ishihara-container .test-start-card h1 {
+    font-size: 1.9rem;
+  }
+
+  .brand-title {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+  }
+
+  .question-header {
+    font-size: 12px;
+  }
+
+  .plate-image {
+    max-width: 280px;
+  }
+
+  .result-score h2 {
+    font-size: 2.8rem;
+  }
+
+  .result-loading-card h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* =========================================================
+   NEXT STEP
+========================================================= */
+
+.result-next-step {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.next-step-btn {
+  width: 100%;
+  max-width: 420px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 28px;
+  border: none;
+  background: #173f35;
+  color: #ffffff;
+  border-radius: 15px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.next-step-btn span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.next-step-btn:hover {
+  background: #28594d;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(23, 63, 53, 0.18);
+}
+
+.next-step-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .result-next-step {
+    margin-top: 25px;
+  }
+
+  .next-step-btn {
+    max-width: none;
+    min-height: 52px;
+    font-size: 14px;
+  }
+}
+/* =========================================================
+   IMPORTANT MEDICAL DISCLAIMER
+========================================================= */
+
+.medical-disclaimer {
+  position: relative;
+  padding: 28px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  background: #fff7e6;
+  border: 2px solid #e3b341;
+  border-left: 7px solid #c9a227;
+  border-radius: 20px;
+}
+
+.medical-disclaimer h3 {
+  margin-bottom: 14px;
+  color: #8a6812;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.medical-disclaimer p {
+  margin-bottom: 12px;
+  color: #5f5435;
+  line-height: 1.75;
+}
+
+.medical-disclaimer p:last-child {
+  margin-bottom: 0;
+}
+
+.medical-disclaimer strong {
+  color: #7a5810;
+  font-weight: 900;
+}
+
+.save-error {
+  max-width: 600px;
+  margin: 20px auto 0;
+  padding: 15px 20px;
+  background: #fff0f0;
+  color: #a33a3a;
+  border: 1px solid #efc2c2;
+  border-radius: 14px;
+  font-size: 13px;
+  line-height: 1.6;
+}

@@ -1,0 +1,915 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+
+.home-page {
+  min-height: 100vh;
+
+
+  background:
+    radial-gradient(
+      circle at top right,
+      #eaf7f1 0%,
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      #fff6e3 0%,
+      transparent 25%
+    ),
+    #f8faf9;
+
+
+  color: #172331;
+}
+
+
+
+
+/* =========================================
+   HERO
+========================================= */
+
+
+.hero {
+  min-height: calc(100vh - 100px);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  padding: 100px 8% 80px;
+
+
+  gap: 70px;
+}
+
+
+
+
+/* HERO CONTENT */
+
+
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+
+.hero-tag {
+  color: #28594d;
+
+
+  font-size: 14px;
+  font-weight: 800;
+
+
+  letter-spacing: 2.5px;
+  line-height: 1.5;
+
+
+  margin-bottom: 22px;
+}
+
+
+
+
+/* MAIN HEADING */
+
+
+.hero h1 {
+  margin: 0;
+
+
+  font-size: clamp(52px, 5.2vw, 76px);
+  font-weight: 800;
+
+
+  line-height: 1.02;
+  letter-spacing: -2.5px;
+
+
+  color: #172331;
+}
+
+
+.hero h1 span {
+  color: #28594d;
+}
+
+
+
+
+/* DESCRIPTION */
+
+
+.hero-description {
+  max-width: 620px;
+
+
+  margin-top: 28px;
+  margin-bottom: 0;
+
+
+  font-size: 18px;
+  line-height: 1.8;
+
+
+  color: #66716d;
+}
+
+
+
+
+/* =========================================
+   HERO BUTTON
+========================================= */
+
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+
+
+  margin-top: 38px;
+}
+
+
+.btn-primary {
+  min-width: 250px;
+  height: 60px;
+
+
+  padding: 0 30px;
+
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+
+  border-radius: 16px;
+
+
+  background: #173f35;
+  color: #ffffff;
+
+
+  font-size: 18px;
+  font-weight: 700;
+
+
+  text-decoration: none;
+
+
+  box-shadow:
+    0 10px 25px rgba(23, 63, 53, 0.16);
+
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.btn-primary:hover {
+  background: #215546;
+
+
+  transform: translateY(-3px);
+
+
+  box-shadow:
+    0 15px 30px rgba(23, 63, 53, 0.23);
+}
+
+
+.btn-primary:active {
+  transform: translateY(-1px);
+}
+
+
+
+
+/* =========================================
+   HERO IMAGE - BLENDED
+========================================= */
+
+.hero-image {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 0;
+
+  position: relative;
+}
+
+/* Soft background glow */
+.hero-image::before {
+  content: "";
+
+  position: absolute;
+
+  width: 75%;
+  height: 75%;
+
+  background: #eaf7f1;
+
+  border-radius: 50%;
+
+  filter: blur(70px);
+
+  opacity: 0.45;
+
+  z-index: 0;
+}
+
+.hero-image img {
+  position: relative;
+  z-index: 1;
+
+  width: min(620px, 100%);
+  max-height: 620px;
+
+  object-fit: contain;
+
+  /*
+    Fade the edges of the image
+    so the rectangular boundary disappears.
+  */
+  -webkit-mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+
+  -webkit-mask-composite: source-in;
+
+  mask-image:
+    linear-gradient(
+      to right,
+      transparent 0%,
+      black 12%,
+      black 88%,
+      transparent 100%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+
+  mask-composite: intersect;
+
+  /*
+    Makes the white areas of the image
+    blend more naturally with the page.
+  */
+  mix-blend-mode: multiply;
+
+  filter:
+    drop-shadow(
+      0 20px 35px rgba(23, 63, 53, 0.08)
+    );
+
+  animation: float 5s ease-in-out infinite;
+}
+
+
+
+/* SOFT FADE INTO PAGE */
+
+
+.hero-image::after {
+  content: "";
+
+
+  position: absolute;
+
+
+  inset: 0;
+
+
+  z-index: 2;
+
+
+  pointer-events: none;
+
+
+  background:
+    linear-gradient(
+      to left,
+      transparent 50%,
+      rgba(248, 250, 249, 0.25) 70%,
+      rgba(248, 250, 249, 0.75) 88%,
+      #f8faf9 100%
+    ),
+
+
+    linear-gradient(
+      to bottom,
+      #f8faf9 0%,
+      transparent 15%,
+      transparent 82%,
+      #f8faf9 100%
+    );
+}
+
+
+
+
+/* IMAGE FLOAT */
+
+
+@keyframes float {
+
+
+  0% {
+    transform: translateY(0);
+  }
+
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+
+  100% {
+    transform: translateY(0);
+  }
+
+
+}
+
+
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+
+.features {
+  padding: 100px 8%;
+}
+
+
+
+
+/* SECTION HEADER */
+
+
+.section-header {
+  max-width: 720px;
+
+
+  margin: 0 auto 55px;
+
+
+  text-align: center;
+}
+
+
+.section-header h2 {
+  margin: 0;
+
+
+  font-size: 42px;
+  font-weight: 800;
+
+
+  color: #173f35;
+}
+
+
+.section-header p {
+  margin-top: 14px;
+
+
+  font-size: 17px;
+  line-height: 1.7;
+
+
+  color: #66716d;
+}
+
+
+
+
+/* FEATURE GRID */
+
+
+.feature-grid {
+  display: grid;
+
+
+  grid-template-columns: repeat(3, 1fr);
+
+
+  gap: 25px;
+
+
+  max-width: 1250px;
+
+
+  margin: 0 auto;
+}
+
+
+
+
+/* FEATURE CARD */
+
+
+.feature-card {
+  padding: 34px;
+
+
+  background: rgba(255, 255, 255, 0.82);
+
+
+  border: 1px solid rgba(23, 63, 53, 0.08);
+
+
+  border-radius: 22px;
+
+
+  box-shadow:
+    0 12px 35px rgba(23, 63, 53, 0.07);
+
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+.feature-card:hover {
+  transform: translateY(-8px);
+
+
+  border-color: rgba(23, 63, 53, 0.15);
+
+
+  box-shadow:
+    0 25px 50px rgba(23, 63, 53, 0.13);
+}
+
+
+.feature-card h3 {
+  margin: 0 0 14px;
+
+
+  font-size: 24px;
+  font-weight: 800;
+
+
+  color: #173f35;
+}
+
+
+.feature-card p {
+  margin: 0;
+
+
+  color: #66716d;
+
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+
+
+/* =========================================
+   CTA
+========================================= */
+
+
+.cta {
+  max-width: 1200px;
+
+
+  margin: 100px auto;
+
+
+  padding: 75px 60px;
+
+
+  background:
+    linear-gradient(
+      135deg,
+      #173f35,
+      #28594d
+    );
+
+
+  border-radius: 30px;
+
+
+  text-align: center;
+
+
+  color: #ffffff;
+
+
+  box-shadow:
+    0 25px 55px rgba(23, 63, 53, 0.18);
+}
+
+
+.cta h2 {
+  margin: 0 0 20px;
+
+
+  font-size: 44px;
+  font-weight: 800;
+
+
+  color: #ffffff;
+}
+
+
+.cta p {
+  max-width: 700px;
+
+
+  margin: 0 auto 35px;
+
+
+  font-size: 18px;
+  line-height: 1.8;
+
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+
+
+
+/* CTA BUTTON */
+
+
+.cta .primary-btn {
+  display: inline-flex;
+
+
+  justify-content: center;
+  align-items: center;
+
+
+  width: 260px;
+  height: 58px;
+
+
+  background: #ffffff;
+  color: #173f35;
+
+
+  border-radius: 15px;
+
+
+  font-size: 17px;
+  font-weight: 700;
+
+
+  text-decoration: none;
+
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.10);
+
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.cta .primary-btn:hover {
+  background: #eef5f0;
+
+
+  transform: translateY(-3px);
+
+
+  box-shadow:
+    0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+
+@media (max-width: 1000px) {
+
+
+  .hero {
+    gap: 40px;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+
+  .hero h1 {
+    font-size: clamp(48px, 6vw, 65px);
+  }
+
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+
+  .hero-image img {
+    max-width: 500px;
+  }
+
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+  }
+
+
+}
+
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+
+@media (max-width: 768px) {
+
+
+  .home-page {
+    overflow-x: hidden;
+  }
+
+
+  .hero {
+    flex-direction: column-reverse;
+
+
+    min-height: auto;
+
+
+    padding:
+      100px
+      24px
+      70px;
+
+
+    gap: 35px;
+
+
+    text-align: center;
+  }
+
+
+  .hero-content {
+    width: 100%;
+    max-width: 700px;
+  }
+
+
+  .hero-tag {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+
+  .hero h1 {
+    font-size: clamp(40px, 10vw, 58px);
+
+
+    line-height: 1.08;
+
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .hero h1 span {
+    display: block;
+  }
+
+
+  .hero-description {
+    max-width: 600px;
+
+
+    margin:
+      22px auto 0;
+
+
+    font-size: 16px;
+  }
+
+
+  .hero-buttons {
+    justify-content: center;
+
+
+    width: 100%;
+
+
+    margin-top: 30px;
+  }
+
+
+  .btn-primary {
+    width: 100%;
+    max-width: 320px;
+
+
+    height: 56px;
+
+
+    font-size: 17px;
+  }
+
+
+  .hero-image img {
+    width: 100%;
+    max-width: 380px;
+  }
+
+
+
+
+  /* FEATURES */
+
+
+  .features {
+    padding:
+      70px
+      24px;
+  }
+
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+
+  .section-header h2 {
+    font-size: 34px;
+  }
+
+
+  .section-header p {
+    font-size: 15px;
+  }
+
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+
+
+    gap: 18px;
+  }
+
+
+  .feature-card {
+    padding: 28px;
+  }
+
+
+
+
+  /* CTA */
+
+
+  .cta {
+    margin:
+      70px
+      18px;
+
+
+    padding:
+      50px
+      25px;
+
+
+    border-radius: 24px;
+  }
+
+
+  .cta h2 {
+    font-size: 34px;
+  }
+
+
+  .cta p {
+    font-size: 16px;
+  }
+
+
+  .cta .primary-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+
+}
+
+
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+
+@media (max-width: 480px) {
+
+
+  .hero {
+    padding:
+      90px
+      18px
+      60px;
+  }
+
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+
+  .hero-image img {
+    max-width: 300px;
+  }
+
+
+  .features {
+    padding:
+      60px
+      18px;
+  }
+
+
+  .section-header h2 {
+    font-size: 30px;
+  }
+
+
+  .cta {
+    margin:
+      50px
+      14px;
+
+
+    padding:
+      40px
+      20px;
+  }
+
+
+  .cta h2 {
+    font-size: 29px;
+  }
+
+
+  .cta p {
+    font-size: 15px;
+  }
+
+
+}
+

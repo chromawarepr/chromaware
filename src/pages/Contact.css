@@ -1,0 +1,902 @@
+.contact-page{
+    background:#F6F8F7;
+    min-height:100vh;
+    padding:120px 8% 80px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#173B32;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.contact-hero{
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+}
+
+.contact-tag{
+    color:#4D7C6B;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:4px;
+    margin-bottom:15px;
+}
+
+.contact-hero h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.hero-description{
+    max-width:720px;
+    margin:auto;
+    color:#66766F;
+    font-size:18px;
+    line-height:1.8;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-contact{
+    max-width:1100px;
+    margin:auto;
+    margin-bottom:70px;
+    background:#fff;
+    border-radius:20px;
+    padding:45px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.about-contact h2{
+    color:#173B32;
+    margin-bottom:18px;
+    font-size:34px;
+}
+
+.about-contact p{
+    color:#66766F;
+    line-height:1.9;
+    font-size:17px;
+}
+
+/* =========================
+   CONTACT CARDS
+========================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-bottom:80px;
+}
+
+.contact-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#EAF3F0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:32px;
+    margin-bottom:22px;
+}
+
+.contact-card h3{
+    color:#173B32;
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.contact-card span{
+    color:#66766F;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.team-section{
+    margin-bottom:90px;
+}
+
+.team-section h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:45px;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.member-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 8px 22px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.member-card:hover{
+    transform:translateY(-8px);
+}
+
+.member-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.placeholder-photo{
+    width:100%;
+    height:320px;
+    background:#E9EFEC;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#6A7A74;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+    line-height:1.6;
+}
+
+.member-card h3{
+    margin-top:25px;
+    color:#173B32;
+}
+
+.member-card h4{
+    color:#4D7C6B;
+    margin:10px 0 18px;
+    font-weight:600;
+}
+
+.member-card p{
+    padding:0 30px 35px;
+    color:#66766F;
+    line-height:1.7;
+}
+
+/* =========================
+   FEEDBACK
+========================= */
+
+.feedback-section{
+    max-width:900px;
+    margin:auto;
+}
+
+.feedback-section h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:36px;
+}
+
+.feedback-card{
+    background:#fff;
+    border-radius:22px;
+    padding:45px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.contact-form{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:17px 18px;
+    border:1px solid #D8E1DD;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    background:white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#28594D;
+    box-shadow:0 0 0 4px rgba(40,89,77,.10);
+}
+
+.contact-form textarea{
+    resize:vertical;
+}
+
+.contact-form button{
+    background:#28594D;
+    color:#fff;
+    border:none;
+    padding:17px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#1E463C;
+}
+
+.contact-form button:disabled{
+    background:#8FA79E;
+    cursor:not-allowed;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .contact-page{
+        padding:100px 6% 60px;
+    }
+
+    .contact-hero h1{
+        font-size:38px;
+    }
+
+    .about-contact{
+        padding:30px;
+    }
+
+    .feedback-card{
+        padding:30px;
+    }
+
+    .member-card img,
+    .placeholder-photo{
+        height:260px;
+    }
+
+    .team-section h2,
+    .feedback-section h2,
+    .about-contact h2{
+        font-size:30px;
+    }
+
+}
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.member-card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.member-card:hover{
+    transform:translateY(-8px);
+}
+
+.member-photo{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #EAF3EF;
+    display:block;
+    margin:0 auto 25px;
+}
+
+.placeholder-photo{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:#EEF6F3;
+    border:3px dashed #B9CEC6;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 25px;
+    color:#60766E;
+    font-weight:600;
+    text-align:center;
+}
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width: 992px) {
+
+  .contact-page{
+    padding:100px 6% 60px;
+  }
+
+  .contact-hero h1{
+    font-size:42px;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+ .team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+  .feedback-card{
+    max-width:100%;
+    padding:35px;
+  }
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width:768px){
+
+  .contact-page{
+    padding:90px 20px 50px;
+  }
+
+  /* Hero */
+
+  .contact-hero{
+    margin-bottom:50px;
+  }
+
+  .contact-tag{
+    font-size:12px;
+    letter-spacing:2px;
+  }
+
+  .contact-hero h1{
+    font-size:34px;
+  }
+
+  .hero-description{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  /* About */
+
+  .about-contact{
+    padding:30px 22px;
+    margin-bottom:40px;
+  }
+
+  .about-contact h2{
+    font-size:28px;
+  }
+
+  .about-contact p{
+    font-size:15px;
+  }
+
+  /* Contact Cards */
+
+  .contact-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+    margin-bottom:50px;
+  }
+
+  .contact-card{
+    padding:25px;
+  }
+
+  .icon{
+    font-size:34px;
+  }
+
+  /* Team */
+
+  .team-section h2{
+    font-size:30px;
+    margin-bottom:25px;
+  }
+
+  .team-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+  }
+
+  .member-card{
+    padding:30px 20px;
+  }
+
+  .member-photo,
+  .placeholder-photo{
+    width:140px;
+    height:140px;
+  }
+
+  .member-card h3{
+    font-size:26px;
+  }
+
+  .member-card h4{
+    font-size:18px;
+  }
+
+  .member-card p{
+    font-size:15px;
+    line-height:1.6;
+  }
+
+  /* Feedback */
+
+  .feedback-section h2{
+    font-size:30px;
+  }
+
+  .feedback-card{
+    padding:25px;
+  }
+
+  .contact-form input,
+  .contact-form textarea{
+    font-size:15px;
+    padding:14px 16px;
+  }
+
+  .contact-form button{
+    width:100%;
+    font-size:16px;
+    padding:15px;
+  }
+
+}
+
+/* ==========================
+   SMALL PHONES
+========================== */
+
+@media (max-width:480px){
+
+  .contact-page{
+    padding:85px 15px 40px;
+  }
+
+  .contact-hero h1{
+    font-size:28px;
+  }
+
+  .hero-description{
+    font-size:15px;
+  }
+
+  .about-contact h2,
+  .team-section h2,
+  .feedback-section h2{
+    font-size:24px;
+  }
+
+  .member-photo,
+  .placeholder-photo{
+    width:120px;
+    height:120px;
+  }
+
+  .member-card h3{
+    font-size:22px;
+  }
+
+  .contact-card,
+  .member-card,
+  .feedback-card{
+    border-radius:18px;
+  }
+
+}
+/* ==========================================
+   ABOUT RESEARCH
+========================================== */
+
+.about-contact{
+    margin:80px 0;
+}
+
+.about-card{
+    background:#fff;
+    border-radius:24px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.about-card h2{
+    font-size:36px;
+    color:#173B32;
+    margin-bottom:20px;
+}
+
+.about-card p{
+    color:#66766F;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.about-highlights{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.highlight-card{
+    background:#F3F7F5;
+    border-radius:18px;
+    padding:30px;
+    border-left:5px solid #28594D;
+}
+
+.highlight-card h3{
+    color:#173B32;
+    margin-bottom:12px;
+}
+
+.highlight-card p{
+    font-size:15px;
+}
+
+/* ==========================================
+   CONTACT INFO
+========================================== */
+
+.contact-info{
+    margin:90px 0;
+}
+
+.contact-info h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.contact-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#EDF5F1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    margin:0 auto 20px;
+}
+
+.contact-card span{
+    display:block;
+    margin-top:12px;
+    color:#7A8B85;
+    line-height:1.6;
+}
+
+/* ==========================================
+   TEAM
+========================================== */
+
+.team-section{
+    margin:100px 0;
+}
+
+.team-section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.team-description{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 50px;
+    color:#66766F;
+    line-height:1.8;
+}
+
+.lead-researcher{
+    background:#fff;
+    border-radius:24px;
+    padding:45px;
+    display:flex;
+    gap:45px;
+    align-items:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.07);
+}
+
+.member-photo{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:8px solid #E9F3EF;
+    flex-shrink:0;
+}
+
+.badge{
+    display:inline-block;
+    background:#28594D;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:13px;
+    margin-bottom:18px;
+}
+
+.lead-content h3{
+    font-size:34px;
+    color:#173B32;
+}
+
+.lead-content h4{
+    margin:10px 0 20px;
+    color:#4D7C6B;
+}
+
+.lead-content p{
+    color:#66766F;
+    line-height:1.8;
+}
+
+.members-title{
+    text-align:center;
+    margin:60px 0 30px;
+    font-size:28px;
+}
+
+.members-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.member-card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.member-card:hover{
+    transform:translateY(-8px);
+}
+
+.placeholder-photo{
+    width:170px;
+    height:170px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    border:3px dashed #B8CAC3;
+    background:#F3F7F5;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#5F756C;
+    font-weight:600;
+    text-align:center;
+}
+
+/* ==========================================
+   FEEDBACK
+========================================== */
+
+.feedback-header{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 60px;
+}
+
+.section-tag{
+    color:#4D7C6B;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.feedback-header h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.feedback-header p{
+    color:#66766F;
+    line-height:1.8;
+}
+
+.feedback-container{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:35px;
+}
+
+.feedback-info{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.info-box{
+    background:#fff;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 8px 22px rgba(0,0,0,.05);
+}
+
+.info-box h3{
+    margin-bottom:12px;
+    color:#173B32;
+}
+
+.info-box p{
+    color:#66766F;
+    line-height:1.7;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-weight:600;
+    color:#173B32;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:992px){
+
+    .about-highlights{
+        grid-template-columns:1fr;
+    }
+
+    .lead-researcher{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .feedback-container{
+        grid-template-columns:1fr;
+    }
+
+    .members-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .about-card{
+        padding:30px;
+    }
+
+    .about-card h2,
+    .contact-info h2,
+    .team-section h2,
+    .feedback-header h2{
+        font-size:30px;
+    }
+
+    .member-photo{
+        width:170px;
+        height:170px;
+    }
+
+    .placeholder-photo{
+        width:140px;
+        height:140px;
+    }
+
+    .lead-content h3{
+        font-size:28px;
+    }
+
+    .feedback-card{
+        padding:28px;
+    }
+
+}
+/* FAQ */
+
+.faq-section{
+    margin:80px 0;
+}
+
+.faq-section h2{
+    text-align:center;
+    font-size:34px;
+    color:#173B32;
+    margin-bottom:40px;
+}
+
+.faq-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.faq-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 6px 18px rgba(0,0,0,.06);
+}
+
+.faq-card h3{
+    color:#173B32;
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.faq-card p{
+    color:#66766F;
+    line-height:1.8;
+}
+
+@media(max-width:992px){
+
+    .faq-grid{
+        grid-template-columns:1fr;
+    }
+
+}

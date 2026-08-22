@@ -1,0 +1,670 @@
+/* =========================================
+   CHROMAWARE USER GUIDE
+========================================= */
+
+
+/* Prevent navbar from appearing over guide */
+body.user-guide-open .navbar,
+body.user-guide-open nav {
+  visibility: hidden;
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.guide-overlay {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  background: rgba(7, 28, 23, 0.72);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  z-index: 999999;
+
+  animation: guideFadeIn 0.3s ease;
+}
+
+
+/* =========================================
+   MODAL
+========================================= */
+
+.guide-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 820px;
+
+  max-height: calc(100vh - 50px);
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.4);
+
+  animation: guideSlideUp 0.35s ease;
+
+  scrollbar-width: thin;
+  scrollbar-color: #b8cbc3 transparent;
+}
+
+.guide-modal::-webkit-scrollbar {
+  width: 7px;
+}
+
+.guide-modal::-webkit-scrollbar-thumb {
+  background: #b8cbc3;
+  border-radius: 20px;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.guide-close {
+  position: absolute;
+
+  top: 18px;
+  right: 18px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #edf4f1;
+
+  color: #173f35;
+
+  font-size: 29px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: all 0.25s ease;
+}
+
+.guide-close:hover {
+  background: #173f35;
+
+  color: #ffffff;
+
+  transform: rotate(90deg);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.guide-header {
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 38px 60px 25px 55px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #f4f8f6
+    );
+
+  border-bottom: 1px solid #e3ece8;
+}
+
+.guide-icon {
+  width: 66px;
+  height: 66px;
+
+  min-width: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 20px;
+
+  background: #173f35;
+
+  color: #ffffff;
+
+  font-size: 35px;
+  font-weight: 700;
+
+  box-shadow:
+    0 8px 20px rgba(23, 63, 53, 0.18);
+}
+
+.guide-title-area {
+  padding-right: 40px;
+}
+
+.guide-small-title {
+  margin: 0 0 4px;
+
+  color: #7b9188;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.guide-header h1 {
+  margin: 0;
+
+  color: #173f35;
+
+  text-align: left;
+
+  font-size: 32px;
+  font-weight: 750;
+
+  line-height: 1.1;
+}
+
+.guide-subtitle {
+  margin: 5px 0 0;
+
+  color: #62776e;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.guide-intro {
+  padding: 20px 55px;
+
+  background: #f5f9f7;
+
+  border-bottom: 1px solid #e3ece8;
+}
+
+.guide-intro p {
+  margin: 0;
+
+  color: #53685f;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   GUIDE CONTENT
+========================================= */
+
+.guide-content {
+  padding: 18px 55px 25px;
+}
+
+.guide-step {
+  display: flex;
+
+  gap: 18px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid #edf1ef;
+}
+
+.guide-step:last-child {
+  border-bottom: none;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+
+  min-width: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dcebe5;
+
+  color: #173f35;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.step-text {
+  flex: 1;
+}
+
+.step-text h3 {
+  margin: 0 0 9px;
+
+  color: #173f35;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.step-text ul {
+  margin: 0;
+
+  padding-left: 20px;
+
+  color: #5e7069;
+}
+
+.step-text li {
+  margin-bottom: 7px;
+
+  font-size: 14px;
+
+  line-height: 1.65;
+}
+
+.step-text li:last-child {
+  margin-bottom: 0;
+}
+
+.step-text strong {
+  color: #173f35;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.guide-footer {
+  padding: 25px 55px 30px;
+
+  background: #f5f9f7;
+
+  border-top: 1px solid #e3ece8;
+}
+
+.guide-footer > p {
+  max-width: 620px;
+
+  margin: 0 auto 20px;
+
+  color: #53685f;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+.guide-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #e1eae6;
+}
+
+.guide-footer-actions > span {
+  color: #71847c;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   START BUTTON
+========================================= */
+
+.guide-start-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+
+  border: none;
+
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  background: #173f35;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.guide-start-btn:hover {
+  background: #245548;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px rgba(23, 63, 53, 0.2);
+}
+
+.guide-start-btn span {
+  font-size: 18px;
+}
+
+
+/* =========================
+   FLOATING HELP BUTTON
+========================= */
+
+.floating-help {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 14px 20px;
+
+  background: #173f35;
+  color: white;
+
+  border: none;
+  border-radius: 50px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  z-index: 999;
+  transition: 0.3s ease;
+}
+
+.floating-help:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .floating-help {
+    right: 16px;
+    bottom: 20px;
+
+    width: 52px;
+    height: 52px;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    font-size: 0;
+
+    gap: 0;
+  }
+
+  /* Show only the question mark/icon */
+  .floating-help::after {
+    content: "?";
+
+    font-size: 24px;
+    font-weight: 800;
+
+    color: white;
+  }
+
+  /* Hide existing Help text/icon on mobile */
+  .floating-help span,
+  .floating-help .help-text {
+    display: none;
+  }
+
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes guideFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes guideSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+  .guide-overlay {
+    padding: 15px;
+  }
+
+  .guide-modal {
+    max-height: calc(100vh - 30px);
+
+    border-radius: 20px;
+  }
+
+  .guide-header {
+    padding: 30px 50px 22px 30px;
+  }
+
+  .guide-intro {
+    padding: 18px 30px;
+  }
+
+  .guide-content {
+    padding: 12px 30px 20px;
+  }
+
+  .guide-footer {
+    padding: 22px 30px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .guide-overlay {
+    align-items: flex-end;
+
+    padding: 0;
+  }
+
+  .guide-modal {
+    max-width: 100%;
+
+    max-height: 92vh;
+
+    border-radius: 22px 22px 0 0;
+  }
+
+  .guide-close {
+    top: 14px;
+    right: 14px;
+
+    width: 36px;
+    height: 36px;
+
+    font-size: 26px;
+  }
+
+  .guide-header {
+    gap: 13px;
+
+    padding: 26px 55px 18px 20px;
+  }
+
+  .guide-icon {
+    width: 52px;
+    height: 52px;
+
+    min-width: 52px;
+
+    border-radius: 16px;
+
+    font-size: 29px;
+  }
+
+  .guide-header h1 {
+    font-size: 25px;
+  }
+
+  .guide-subtitle {
+    font-size: 13px;
+  }
+
+  .guide-intro {
+    padding: 16px 20px;
+  }
+
+  .guide-intro p {
+    font-size: 13px;
+  }
+
+  .guide-content {
+    padding: 8px 20px 18px;
+  }
+
+  .guide-step {
+    gap: 12px;
+
+    padding: 18px 0;
+  }
+
+  .step-number {
+    width: 30px;
+    height: 30px;
+
+    min-width: 30px;
+
+    font-size: 12px;
+  }
+
+  .step-text h3 {
+    font-size: 15px;
+  }
+
+  .step-text ul {
+    padding-left: 17px;
+  }
+
+  .step-text li {
+    font-size: 12.5px;
+
+    line-height: 1.6;
+  }
+
+  .guide-footer {
+    padding: 20px;
+  }
+
+  .guide-footer > p {
+    margin-bottom: 16px;
+
+    font-size: 12.5px;
+  }
+
+  .guide-footer-actions {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 14px;
+  }
+
+  .guide-footer-actions > span {
+    text-align: center;
+
+    font-size: 11px;
+  }
+
+  .guide-start-btn {
+    width: 100%;
+  }
+
+  .floating-help {
+    right: 16px;
+    bottom: 18px;
+
+    padding: 11px 15px;
+  }
+}

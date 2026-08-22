@@ -1,0 +1,797 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+body{
+    margin:0;
+    padding:0;
+    background:#F6F8F7;
+    font-family:'Inter',sans-serif;
+}
+
+.about-page{
+    width:100%;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.about-hero{
+
+    max-width:1300px;
+
+    margin:140px auto 100px;
+
+    padding:0 40px;
+
+    display:grid;
+
+    grid-template-columns:1fr 420px;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+.about-tag{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    background:#E8F5EE;
+
+    color:#2D6A4F;
+
+    border-radius:40px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.about-content h1{
+
+    font-size:58px;
+
+    color:#173F35;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.about-content h1 span{
+
+    color:#173F35;
+
+}
+
+.about-content p{
+
+    font-size:18px;
+
+    color:#66736E;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+.about-btn{
+
+    border:none;
+
+    padding:16px 34px;
+
+    background:#173F35;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.about-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:#245747;
+
+}
+
+.about-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:330px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.10);
+
+}
+
+/* ==========================
+   MISSION
+========================== */
+
+.mission-section{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    padding:0 40px 90px;
+
+}
+
+.mission-card{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.mission-card h2{
+
+    color:#173F35;
+
+    margin-bottom:15px;
+
+}
+
+.mission-card p{
+
+    color:#66736E;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   FEATURES
+========================== */
+
+.features-section{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:30px 40px 90px;
+
+}
+
+.features-section h2{
+
+    text-align:center;
+
+    color:#173F35;
+
+    font-size:42px;
+
+    margin-bottom:50px;
+
+}
+
+.features-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.feature-card h3{
+
+    color:#173F35;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#66736E;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   RESEARCH
+========================== */
+
+.research-section{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:20px 40px 90px;
+
+}
+
+.research-section h2{
+
+    text-align:center;
+
+    color:#173F35;
+
+    font-size:42px;
+
+    margin-bottom:40px;
+
+}
+
+.research-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:45px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.research-card h3{
+
+    color:#173F35;
+
+    margin-bottom:10px;
+
+}
+
+.research-card p{
+
+    color:#66736E;
+
+    line-height:1.7;
+
+}
+
+.research-card hr{
+
+    border:none;
+
+    border-top:1px solid #ECECEC;
+
+    margin:25px 0;
+
+}
+
+/* ==========================
+   RESEARCH TEAM
+========================== */
+
+.research-team-section{
+    max-width:1200px;
+    margin:100px auto;
+    padding:0 40px;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-tag{
+    display:inline-block;
+    padding:10px 18px;
+    background:#E8F5EE;
+    color:#2D6A4F;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.section-header h2{
+    font-size:42px;
+    color:#173F35;
+    margin-bottom:12px;
+}
+
+.section-header p{
+    max-width:650px;
+    margin:auto;
+    color:#66736E;
+    line-height:1.8;
+}
+
+/* Center the card while you only have one researcher */
+.research-team-grid{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.research-member{
+    width:330px;
+    background:#fff;
+    border-radius:24px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.research-member:hover{
+    transform:translateY(-8px);
+}
+
+.research-member img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+    margin:0 auto 20px;
+    border:6px solid #EEF5F1;
+}
+
+.coming-soon-photo{
+    width:170px;
+    height:170px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#EEF5F1;
+    border:3px dashed #C8D4CE;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#7A8782;
+    font-weight:600;
+}
+
+.research-member h3{
+    margin:0;
+    color:#173F35;
+    font-size:24px;
+}
+
+.research-member h4{
+    margin:10px 0 15px;
+    color:#C89B3C;
+    font-size:15px;
+}
+
+.research-member p{
+    color:#66736E;
+    line-height:1.7;
+}
+/* ==========================
+   CTA
+========================== */
+
+.about-cta{
+
+    max-width:1200px;
+
+    margin:0 auto 100px;
+
+    padding:70px;
+
+    border-radius:30px;
+
+    background:#173F35;
+
+    text-align:center;
+
+}
+
+.about-cta h2{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.about-cta p{
+
+    color:#E3ECE8;
+
+    max-width:650px;
+
+    margin:auto auto 35px;
+
+    line-height:1.8;
+
+}
+
+.about-cta .about-btn{
+
+    background:#C89B3C;
+
+}
+
+.about-cta .about-btn:hover{
+
+    background:#B88927;
+
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+
+/* HERO */
+
+.about-hero{
+
+    margin:110px auto 50px;
+
+    padding:0 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+    text-align:center;
+
+}
+
+
+.about-image{
+
+    order:-1;
+
+}
+
+
+.about-image img{
+
+    width:220px;
+
+    max-width:80%;
+
+    border-radius:24px;
+
+}
+
+
+.about-tag{
+
+    font-size:12px;
+
+    padding:8px 16px;
+
+}
+
+
+
+.about-content h1{
+
+    font-size:34px;
+
+    line-height:1.25;
+
+    margin-bottom:18px;
+
+}
+
+
+.about-content p{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+}
+
+
+.about-btn{
+
+    width:100%;
+
+    max-width:300px;
+
+    padding:15px;
+
+}
+
+
+
+
+/* MISSION */
+
+.mission-section{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:0 20px 50px;
+
+}
+
+
+.mission-card{
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+.mission-card h2{
+
+    font-size:24px;
+
+}
+
+
+.mission-card p{
+
+    font-size:15px;
+
+}
+
+
+
+
+/* FEATURES */
+
+.features-section{
+
+    padding:20px 20px 50px;
+
+}
+
+
+.features-section h2{
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+}
+
+
+.features-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+.feature-card{
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+.feature-card h3{
+
+    font-size:20px;
+
+}
+
+
+.feature-card p{
+
+    font-size:15px;
+
+}
+
+
+
+
+/* RESEARCH INFORMATION */
+
+.research-section{
+
+    padding:20px;
+
+}
+
+
+.research-section h2{
+
+    font-size:30px;
+
+}
+
+
+.research-card{
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+
+.research-card h3{
+
+    font-size:20px;
+
+}
+
+
+.research-card p{
+
+    font-size:15px;
+
+}
+
+
+
+
+/* TEAM */
+
+.research-team-section{
+
+    margin:50px auto;
+
+    padding:0 20px;
+
+}
+
+
+.section-header h2{
+
+    font-size:30px;
+
+}
+
+
+.section-header p{
+
+    font-size:15px;
+
+}
+
+
+.research-team-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+.research-member{
+
+    width:100%;
+
+    max-width:330px;
+
+    padding:25px;
+
+}
+
+
+.research-member img,
+.coming-soon-photo{
+
+    width:140px;
+
+    height:140px;
+
+}
+
+
+.research-member h3{
+
+    font-size:21px;
+
+}
+
+
+.research-member p{
+
+    font-size:15px;
+
+}
+
+
+
+
+/* CTA */
+
+.about-cta{
+
+    margin:0 20px 60px;
+
+    padding:40px 20px;
+
+    border-radius:25px;
+
+}
+
+
+.about-cta h2{
+
+    font-size:30px;
+
+}
+
+
+.about-cta p{
+
+    font-size:15px;
+
+}
+
+
+}
