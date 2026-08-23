@@ -453,31 +453,38 @@ function Test() {
      START TEST
   ===================================================== */
 
-  const startTest = () => {
+ const startTest = () => {
 
-    const fullName = studentName.trim();
+  const fullName = studentName.trim();
 
-    if (fullName.length < 2) {
-      alert("Please enter your complete name.");
-      return;
-    }
+  if (fullName.length < 2) {
+    alert("Please enter your complete name.");
+    return;
+  }
 
-    const nameParts =
-      fullName.split(/\s+/);
+  const nameParts =
+    fullName.split(/\s+/);
 
-    if (nameParts.length < 2) {
-      alert("Please enter your complete name.");
-      return;
-    }
+  if (nameParts.length < 2) {
+    alert("Please enter your complete name.");
+    return;
+  }
 
-    localStorage.setItem(
-      "chromaware_student_name",
-      fullName
-    );
+  localStorage.setItem(
+    "chromaware_student_name",
+    fullName
+  );
 
-    setStudentName(fullName);
-    setStarted(true);
-  };
+  setStudentName(fullName);
+  setStarted(true);
+
+  setTimeout(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, 50);
+};
 
 
   /* =====================================================
