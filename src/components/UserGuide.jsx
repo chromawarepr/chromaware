@@ -68,14 +68,6 @@ function UserGuide() {
             aria-modal="true"
             aria-labelledby="guide-title"
           >
-            {/* CLOSE */}
-            <button
-              className="guide-close"
-              onClick={closeGuide}
-              aria-label="Close User Guide"
-            >
-              ×
-            </button>
 
             {/* HEADER */}
             <div className="guide-header">
