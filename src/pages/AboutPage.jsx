@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import quishaPhoto from "../assets/researchers/quisha.jpg";
+import quishaPhoto from "../assets/researchers/quisha.png";
 import angelicaPhoto from "../assets/researchers/angelica.png";
 import jeanPhoto from "../assets/researchers/jean.png";
 import "./AboutPage.css";
