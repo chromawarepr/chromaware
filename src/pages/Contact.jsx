@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Contact.css";
 
-import quisha from "../assets/researchers/quisha.jpg";
+import quisha from "../assets/researchers/quisha.png";
 
 import {
   addDoc,
