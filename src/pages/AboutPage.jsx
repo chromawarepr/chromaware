@@ -451,20 +451,17 @@ function AboutPage() {
             <article className="research-member">
               <div className="member-photo">
                 <img
-                  src={quishaPhoto}
+                  src={quisha}
                   alt="Cortez, Quisha Fae A."
                 />
               </div>
 
               <div className="member-info">
-
                 <h3>Cortez, Quisha Fae A.</h3>
 
                 <h4>Lead Developer • Researcher</h4>
 
-                <p>
-                  
-                </p>
+                <p></p>
               </div>
             </article>
 
@@ -477,15 +474,11 @@ function AboutPage() {
               </div>
 
               <div className="member-info">
-      
-
                 <h3>Fresnoza, Maria Angelica A.</h3>
 
                 <h4>Researcher</h4>
 
-                <p>
-                  
-                </p>
+                <p></p>
               </div>
             </article>
 
@@ -498,15 +491,11 @@ function AboutPage() {
               </div>
 
               <div className="member-info">
-               
-
                 <h3>Catilo, Jean Andrei B.</h3>
 
                 <h4>Researcher</h4>
 
-                <p>
-                  
-                </p>
+                <p></p>
               </div>
             </article>
           </div>
