@@ -463,7 +463,7 @@ function AboutPage() {
                 <h4>Lead Developer • Researcher</h4>
 
                 <p>
-                  CUTE LANG
+                  
                 </p>
               </div>
             </article>
@@ -484,7 +484,7 @@ function AboutPage() {
                 <h4>Researcher</h4>
 
                 <p>
-                  CUTE LANG
+                  
                 </p>
               </div>
             </article>
@@ -505,7 +505,7 @@ function AboutPage() {
                 <h4>Researcher</h4>
 
                 <p>
-                  CUTE LANG
+                  
                 </p>
               </div>
             </article>
