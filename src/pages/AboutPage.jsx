@@ -506,6 +506,10 @@ function AboutPage() {
           REFERENCES
       ====================================================== */}
 
+       {/* =====================================================
+          REFERENCES
+      ====================================================== */}
+
       <section className="references-section">
         <div className="references-container">
           <span className="section-tag">REFERENCES</span>
@@ -513,32 +517,128 @@ function AboutPage() {
           <h2>Research References</h2>
 
           <div className="references-list">
+
             <p>
-              Jeong, Y. D., et al. (2025). <i>Global prevalence of congenital
-              color vision deficiency among children and adolescents,
-              1932–2022.</i> Ophthalmology, 132(12), 1431–1444.
+              Jeong, Y. D., Cho, J., Son, Y., Jo, Y., Yim, Y., Kim, T. H.,
+              Kim, S., Cho, H., Rahmati, M., Smith, L., Woo, H. G., Kim, J. H.,
+              Kim, Y. J., Yang, J. M., & Yon, D. K. (2025).{" "}
+              <i>
+                Global prevalence of congenital color vision deficiency among
+                children and adolescents, 1932–2022.
+              </i>{" "}
+              <i>Ophthalmology, 132</i>(12), 1431–1444.{" "}
+              <a
+                href="https://doi.org/10.1016/j.ophtha.2025.07.031"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://doi.org/10.1016/j.ophtha.2025.07.031
+              </a>
             </p>
 
             <p>
-              National Eye Institute. (2023). <i>Types of color vision
-              deficiency.</i> National Institutes of Health.
+              Naifeh, N., & Kaufman, E. J. (2022).{" "}
+              <i>Color vision.</i> In <i>StatPearls</i>. StatPearls
+              Publishing.
             </p>
 
             <p>
-              National Eye Institute. (2025). <i>Color blindness.</i> National
-              Institutes of Health.
+              National Eye Institute. (2023).{" "}
+              <i>Types of color vision deficiency.</i> National Institutes of
+              Health.
             </p>
 
             <p>
-              Purves, D., et al. (2001). <i>Neuroscience: Cones and color
-              vision.</i> National Center for Biotechnology Information.
+              National Eye Institute. (2024).{" "}
+              <i>Testing for color vision deficiency.</i> National Institutes
+              of Health.
             </p>
 
             <p>
-              Zhang, N., et al. (2025). Diagnostic performance of color vision
-              tests for color vision deficiency: A network meta-analysis.{" "}
-              <i>International Ophthalmology, 45</i>, 208.
+              National Eye Institute. (2025).{" "}
+              <i>Causes of color vision deficiency.</i> National Institutes of
+              Health.
             </p>
+
+            <p>
+              Purves, D., Augustine, G. J., Fitzpatrick, D., Hall, W. C.,
+              LaMantia, A.-S., McNamara, J. O., & White, L. E. (2001).{" "}
+              <i>Cones and color vision.</i> In <i>Neuroscience</i>. National
+              Center for Biotechnology Information.
+            </p>
+
+            <p>
+              Zhang, N., Yang, J., Hu, M., & Liu, Z. (2025).{" "}
+              <i>
+                Diagnostic performance of color vision tests for color vision
+                deficiency: A network meta-analysis on comparisons of multiple
+                color vision tests.
+              </i>{" "}
+              <i>International Ophthalmology, 45</i>, 208.{" "}
+              <a
+                href="https://doi.org/10.1007/s10792-025-03559-6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://doi.org/10.1007/s10792-025-03559-6
+              </a>
+            </p>
+
+          </div>
+
+          {/* REFERENCES FOR TEST CONTENT */}
+
+          <div className="test-content-references">
+            <span className="section-tag">
+              REFERENCES FOR TEST CONTENT
+            </span>
+
+            <h2>Test Content References</h2>
+
+            <div className="references-list">
+
+              <p>
+                Jeong, Y. D., Cho, J., Son, Y., Jo, Y., Yim, Y., Kim, T. H.,
+                ... & Yon, D. K. (2025).{" "}
+                <i>
+                  Global prevalence of congenital color vision deficiency among
+                  children and adolescents, 1932–2022.
+                </i>{" "}
+                <i>Ophthalmology, 132</i>(12), 1431–1444.
+              </p>
+
+              <p>
+                Naifeh, N., & Kaufman, E. J. (2022).{" "}
+                <i>Color vision.</i> In <i>StatPearls</i>. StatPearls
+                Publishing.
+              </p>
+
+              <p>
+                National Eye Institute. (2023).{" "}
+                <i>Types of color vision deficiency.</i> National Institutes
+                of Health.
+              </p>
+
+              <p>
+                National Eye Institute. (2024).{" "}
+                <i>Testing for color vision deficiency.</i> National Institutes
+                of Health.
+              </p>
+
+              <p>
+                National Eye Institute. (2025).{" "}
+                <i>Causes of color vision deficiency.</i> National Institutes
+                of Health.
+              </p>
+
+              <p>
+                Purves, D., Augustine, G. J., Fitzpatrick, D., Hall, W. C.,
+                LaMantia, A.-S., McNamara, J. O., & White, L. E. (2001).{" "}
+                <i>Cones and color vision.</i> In <i>Neuroscience</i>.
+                National Center for Biotechnology Information.
+              </p>
+
+            </div>
           </div>
         </div>
       </section>

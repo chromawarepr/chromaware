@@ -989,3 +989,31 @@
     grid-row: 2;
   }
 }
+/* =====================================================
+   REFERENCES FOR TEST CONTENT
+====================================================== */
+
+.test-content-references {
+  margin-top: 70px;
+  padding-top: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.test-content-references .section-tag {
+  margin-bottom: 22px;
+}
+
+.test-content-references h2 {
+  margin-bottom: 35px;
+}
+
+.references-list a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: break-word;
+}
+
+.references-list p {
+  overflow-wrap: break-word;
+}
