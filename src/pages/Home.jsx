@@ -129,10 +129,7 @@ function Home() {
           Ready to explore color awareness?
         </h2>
 
-        <p>
-          Start learning how color vision affects
-          the way people see and experience the world.
-        </p>
+    
 
         <Link
           to="/test"

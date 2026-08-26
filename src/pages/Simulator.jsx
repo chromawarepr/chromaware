@@ -1281,10 +1281,6 @@ function Simulator() {
 
               <p>
 
-                You've finished exploring
-                the ChromAware Color
-                Blindness Simulator.
-
                 Your feedback will help us
                 improve the experience.
 
